@@ -1,0 +1,82 @@
+.image-holder{
+    padding:0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.image-holder img {
+    width: 120px; /* 또는 128px */
+    height: 120px; /* 또는 128px */
+    object-fit: cover; /* 이미지 비율을 유지하면서 컨테이너에 맞춤 */
+  }
+.card-title{
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+.card-body {
+    position: relative;
+  }
+  
+.profile-details-holder{
+    margin-bottom: 1rem;
+}
+.profile-details{
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.profile-titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.4rem;
+}
+.profile-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1.2rem;
+}
+.detail-title{
+    font-weight: 800;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    gap:0.3rem
+}
+
+.detail-content:nth-child(2){
+    font-size: 0.8rem;
+    
+}
+.achievement-holder{
+    height: 100%;
+    
+}
+.achievement-title{
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+.achievements{
+    display: flex;
+    gap:0.6rem;
+}
+
+.achievement{
+    width:1rem;
+    height:1rem;
+    content: "";
+    background-color:blueviolet;
+}
+.show-detail-btn {
+    position: absolute;
+    bottom: 10px; /* 조정된 값 */
+    right: 10px; /* 카드의 오른쪽 내부에 위치하도록 조정 */
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+    /* transform: translateX(50%); 삭제 */
+  }
