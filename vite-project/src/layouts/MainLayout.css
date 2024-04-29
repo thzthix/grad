@@ -1,0 +1,54 @@
+.main-layout{
+  display: grid;
+  width: 100%;
+  gap:1.2rem;
+  height: 100vh;
+}
+.sidebar{
+  grid-row: 1;
+  grid-column: 1 / 2;
+}
+.outlet-wrapper {
+  grid-column: 2 / -1; /* 모든 사용 가능한 열을 차지하도록 설정 */
+  width: 100%;
+}
+/* .status{
+display: flex;
+flex-direction: column;
+align-items: center;
+} */
+.dashboard-expanded {
+    transition: margin-left .5s; /* 부드러운 전환 효과 */
+    /* 사이드바가 확장됐을 때의 대시보드의 왼쪽 마진 */
+  }
+  
+  .dashboard-collapsed {
+    transition: margin-left .5s;
+     /* 사이드바가 축소됐을 때의 대시보드의 왼쪽 마진 */
+  }
+  /* 대시보드 내 컨텐츠 (카드 등) 스타일 */
+/* .dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  } */
+  
+  /* .card {
+    flex: 1 1 200px; 카드의 기본 크기 설정 */
+    /* 추가적인 카드 스타일링 */
+  /* } */
+  /* 미디어 쿼리 */
+  /* @media (max-width: 768px) {
+    .dashboard-expanded, .dashboard-collapsed {
+      margin-left: 0;
+    }
+  }
+  .dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+  } */
+  
+  /* .card {
+    flex: 1 1 200px; /* 카드의 기본 크기를 200px로 설정하고, 여유 공간이 있으면 확장 */
+  

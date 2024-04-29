@@ -1,8 +1,14 @@
 import React from 'react'
-
-const ExcerciseProgress = () => {
+import Card from 'react-bootstrap/Card';
+import './ExcerciseProgress.css'; 
+const ExcerciseProgress = ({title,children, className}) => {
   return (
-    <div>ExcerciseProgress</div>
+    <Card className={`exercise-progress-card ${className}`}>
+         <div className="title-holder">
+        <h5>{title}</h5>
+      </div>
+   {children}
+  </Card>
   )
 }
 

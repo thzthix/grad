@@ -1,9 +1,16 @@
+.user-profile{
+    border:none;
+    flex-grow: 1;
+    width: 30%;
+ 
+}
 .image-holder{
-    padding:0.3rem;
+    padding:1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+ 
 }
 .image-holder img {
     width: 120px; /* 또는 128px */

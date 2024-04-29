@@ -1,4 +1,5 @@
-import React from 'react'
+import React ,{useContext}from 'react'
+import SidebarContext from "../Contexts/SideBarContext"
 import {
    CDBSidebar,
    CDBSidebarContent,
@@ -8,14 +9,13 @@ import {
    CDBSidebarMenuItem,
  } from 'cdbreact';
  import { NavLink } from 'react-router-dom';
- import { faCamera } from "@fortawesome/free-solid-svg-icons";
- import Image from 'react-bootstrap/Image';
  import "./sideBar.css"
 const SideBar = () => {
+  const { isSidebarOpen, setSidebarOpen } = useContext(SidebarContext);
   return (
-   <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
+   <div className="sidebar" style={{ height: '100vh', overflow: 'scroll initial' }}>
    <CDBSidebar textColor="#fff" backgroundColor="#333" toggled>
-     <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
+     <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large" onClick={() => setSidebarOpen(!isSidebarOpen)}></i>}>
        <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
          HEALTH
        </a>

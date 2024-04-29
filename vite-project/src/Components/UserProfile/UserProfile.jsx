@@ -6,9 +6,9 @@ import Container from 'react-bootstrap/Container';
 import "./UserProfile.css"
 const UserProfile = () => {
   return (
-    <section className="user-profile">
-       <Container fluid>
-       <Card style={{ width: '18rem' }}>
+  
+    
+       <Card className='user-profile'>
        <div className="image-holder">
        <Image src="https://randomuser.me/api/portraits/med/women/75.jpg" roundedCircle />
        </div>
@@ -43,8 +43,7 @@ const UserProfile = () => {
        <a href="/mypage" className='show-detail-btn'>Show more<i className="bi bi-arrow-right"></i></a>
       </Card.Body>
     </Card>
-    </Container>
-    </section>
+ 
   )
 }
 
