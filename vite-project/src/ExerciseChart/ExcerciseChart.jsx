@@ -5,7 +5,7 @@ import 'chart.js/auto';
 
 const ExerciseChart = ({ data, options, className }) => {
   return <ExcerciseProgress title={data.datasets[0].label} className={className}>
-    <Bar data={data} options={options} />
+    <Bar data={data} options={{...options, aspectRatio: 1, borderWidth: 0}} />
   </ExcerciseProgress>
 };
 

@@ -25,6 +25,7 @@ const Dashboard = () => {
    <Header />
 
          <DailyWorkout />
+      
   
          <WeeklyExerciseChart className={"weekly-chart"}/>
 

@@ -38,7 +38,7 @@ const WeeklyGoals = () => {
       };
     
       return <ExcerciseProgress className="weekly-progress">
-        <DoughnutExerciseChart data={data} options={options}  style={{}}/>
+        <DoughnutExerciseChart data={data} options={options}  style={{}} className={"sdls"}/>
       </ExcerciseProgress>
 }
 

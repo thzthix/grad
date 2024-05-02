@@ -1,0 +1,44 @@
+.daily-quantity{
+  align-items: center;
+}
+.daily-calories .exercise-number{
+  color: #FF6384;
+}
+.daily-water .exercise-number{
+  color: #36A2EB;
+}
+.progress-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: transparent; /* 배경을 투명하게 설정 */
+  border: 10px solid lightgrey; /* 전체 테두리를 lightgrey로 설정 */
+  border-right-color: blue; /* 상단 테두리 색상을 파란색으로 설정하여 진행률을 나타냄 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* transform: rotate(-90deg); 동그라미를 -90도 회전시켜 진행 시작점을 상단으로 이동 */
+}
+.quantity-contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0.2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+  
+}
+
+.exercise-slash{
+  color:lightgrey;
+  font-size: 1.5rem;
+  margin-right: 0.2rem;
+  line-height: -1;
+}
+
+/* 추가적으로, 진행률을 동적으로 변경하려면 JavaScript를 사용하여 `border-top-color`의 값이나
+   `transform: rotate()`의 각도를 조정해야 할 수 있습니다. 예를 들어, 진행률이 60%일 때,
+   상단 테두리만 파란색으로 채워지고, 나머지는 lightgrey로 표시됩니다. 진행률을 변경하려면,
+   해당 요소에 적용된 스타일을 JavaScript로 동적으로 변경해야 합니다. */

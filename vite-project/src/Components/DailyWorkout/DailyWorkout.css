@@ -16,12 +16,14 @@ h2{
 .daily-status{
     border: none;
     padding:1rem;
+    align-items: center;
    
 }
 .daily-water{
     grid-row: 1;
     grid-column: 2;
 }
+
 .dailyprogress-status{
 
     grid-column: 3;
@@ -34,10 +36,21 @@ h2{
     
    
 }
-.daily-water{
-    background: linear-gradient(135deg, rgba(0,174,239,1) 0%, rgba(45,56,138,1) 100%);
+.quantity-contents{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    /* background: linear-gradient(135deg, rgba(0,174,239,1) 0%, rgba(45,56,138,1) 100%); */
 
 }
+.icon-container{
+    margin-right: 1rem;
+}
+/* .daily-water svg{
+  height:5rem;
+    color: rgba(45,56,138,1);
+} */
 .title-holder{
     margin-bottom: 1rem;
 }
@@ -49,38 +62,15 @@ h2{
 }
 
 .title-holder h5{
-    color: white;
+    color: #333;
     font-weight: 300;
     font-size: 1rem;
     text-transform: uppercase;
     margin-bottom: 0;
 
 }
-.exercise-contents{
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:0.5rem;
-    color:white;
-}
-svg{
-    font-size: 2.5rem;
-}
-.exercise-number{
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-right: 0.5rem;
 
-}
-.exercise-unit{
-    font-size: 1rem;
-    font-weight: 300;
-   
-}
-.goal{
-    font-size: 1rem;
-}
-.dailyworkout-status h5{
-    color:#333;
-}
+
+
+
+
