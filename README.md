@@ -1,5 +1,5 @@
 
-##PushUp
+## PushUp
 ```mermaid
 flowchart TD
     A[시작] --> B{양쪽 팔이 ANGLE_START 이상인가?}
@@ -17,7 +17,7 @@ flowchart TD
     I --> K[사용자에게 현재 반복 횟수 안내]
     K --> E
 ```
-##Lunge
+## Lunge
 ```mermaid
 flowchart TD
     A[운동 시작] --> B{발 위치 확인}
