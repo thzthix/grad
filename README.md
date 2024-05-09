@@ -1,5 +1,5 @@
-```
-flowchart TD
+
+```flowchart TD
     A[시작] --> B{양쪽 팔이 ANGLE_START 이상인가?}
     B -->|아니오| C[사용자에게 양쪽 팔을 펴도록 안내]
     C --> B
