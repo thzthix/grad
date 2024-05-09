@@ -62,6 +62,7 @@ flowchart TD
 
 
 ##Jumping Jack
+```mermaid
 flowchart TB
     A[시작 자세 취하기: 발을 모으고, 손을 몸 옆에 두기] --> B{발이 모여 있는가?}
     B -- 예 --> C{손이 몸 옆에 있는가?}
@@ -82,4 +83,5 @@ flowchart TB
     L -- 예 --> N[축하합니다! 다음 점핑잭 준비하기]
     M --> A
     N --> A
+```
 
